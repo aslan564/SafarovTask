@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.profile.ProfileFragment">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_view_profile"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/profile_image"
+            android:src="@drawable/profile_image" />
+
+        <ImageView
+            android:id="@+id/image_view_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic__add_art"
+            app:layout_constraintBottom_toBottomOf="@+id/image_view_profile"
+            app:layout_constraintEnd_toEndOf="@+id/image_view_profile"
+            android:contentDescription="@string/add_image_button" />
+
+        <TextView
+            android:id="@+id/text_view_profile_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_detail"
+            android:layout_marginTop="@dimen/margin24"
+            android:layout_marginHorizontal="@dimen/activity_vertical_margin"
+            app:layout_constraintTop_toBottomOf="@+id/image_view_profile"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/text_view_personal_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/private_info"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_profile_info"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:textAppearance="@style/CardSubHeaderText"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/margin8"
+            android:background="@drawable/bg_profile"
+            android:drawableEnd="@drawable/ic_next"
+            android:paddingVertical="@dimen/activity_horizontal_margin"
+            tools:ignore="RtlSymmetry,UseCompatTextViewDrawableXml" />
+
+        <TextView
+            android:id="@+id/text_view_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_personal_info"
+            android:textAlignment="center"
+            android:paddingVertical="@dimen/activity_horizontal_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/bg_profile"
+            android:textColor="#FF3B30"
+            app:layout_constraintVertical_bias="0.4"
+            android:textAppearance="@style/CardSubHeaderText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

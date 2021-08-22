@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">SafarovTask</string>
+    <string name="title_home">Home</string>
+    <string name="title_connection">Əlaqə</string>
+    <string name="title_notifications">Bildirisler</string>
+    <string name="title_profile">Profil</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stories_image">stories image</string>
+    <string name="sub_header">Azərbaycan Respublikasının ən böyük\n investisya hissələrindən biri</string>
+    <string name="header">Invest in Azerbaijan</string>
+    <string name="carusel_image">carusel image</string>
+    <string name="news">Xəbərlər</string>
+    <string name="see_all">Hamısına bax</string>
+    <string name="news_image">news image</string>
+    <string name="attention_of_entrepreneurs">Sahibkarların nəzərinə</string>
+    <string name="export">ixrac</string>
+    <string name="video_gallery">Videoqalereya</string>
+    <string name="video_gallery_image">video gallery image</string>
+    <string name="profile_image">profile image</string>
+    <string name="add_image_button">add image button</string>
+    <string name="profile_detail">PROFİL DETALLARI</string>
+    <string name="private_info">Şəxsi məlumatlar</string>
+    <string name="logout">Çıxış et</string>
+    <string name="name_text_view">AD</string>
+    <string name="email_text_view">ELEKTRON POÇTA</string>
+    <string name="share_text_view">Məlumatlarımı paylaş</string>
+    <string name="surname_text_view">SOYAD</string>
+    <string name="name">Aslan</string>
+    <string name="surname">Aslanov</string>
+    <string name="phone">TELEFON NÖMRƏSİ</string>
+    <string name="edit_text_phone">+994 (50) 426 46 08</string>
+    <string name="edit_text_email">aslanovaslan165@gmail.com</string>
+    <string name="swiper_button">Swiper button</string>
+    <string name="save">Yaddaşda  saxla</string>
+</resources>

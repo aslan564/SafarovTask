@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_stories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/margin2dp"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlSymmetry"
+            tools:listitem="@layout/layout_stories_item" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_carousel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/recycler_view_stories"
+            app:layout_constraintStart_toStartOf="@+id/recycler_view_stories"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view_stories"
+            tools:listitem="@layout/layout_carousel_item" />
+
+        <TextView
+            android:id="@+id/text_view_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin24"
+            android:layout_marginTop="@dimen/margin24"
+            android:text="@string/news"
+            android:textAppearance="@style/Header"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/recycler_view_carousel"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view_carousel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            android:text="@string/see_all"
+            android:textAppearance="@style/CardSubHeaderText"
+            android:textColor="#C72E36"
+            app:layout_constraintBottom_toBottomOf="@+id/text_view_news"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_view_news" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="@+id/recycler_view_stories"
+            app:layout_constraintStart_toStartOf="@+id/recycler_view_stories"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_news"
+            tools:listitem="@layout/layout_news_item" />
+
+        <TextView
+            android:id="@+id/text_view_attention_entrepreneurs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin24"
+            android:layout_marginTop="@dimen/margin24"
+            android:text="@string/attention_of_entrepreneurs"
+            android:textAppearance="@style/Header"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/recycler_view_news"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view_news" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            android:text="@string/see_all"
+            android:textAppearance="@style/CardSubHeaderText"
+            android:textColor="#C72E36"
+            app:layout_constraintBottom_toBottomOf="@+id/text_view_attention_entrepreneurs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_view_attention_entrepreneurs" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_entrepreneurs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_attention_entrepreneurs"
+            tools:listitem="@layout/layout_entrepreneurs_item" />
+
+        <TextView
+            android:id="@+id/text_view_attention_video_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin24"
+            android:layout_marginTop="@dimen/margin24"
+            android:text="@string/video_gallery"
+            android:textAppearance="@style/Header"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/recycler_view_entrepreneurs"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view_entrepreneurs" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            android:text="@string/see_all"
+            android:textAppearance="@style/CardSubHeaderText"
+            android:textColor="#C72E36"
+            app:layout_constraintBottom_toBottomOf="@+id/text_view_attention_video_gallery"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_view_attention_video_gallery" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_video_gallery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_attention_video_gallery"
+            tools:listitem="@layout/layout_entrepreneurs_item" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

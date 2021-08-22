@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SafarovTask</string>
+    <string name="title_home">Home</string>
+    <string name="title_connection">Əlaqə</string>
+    <string name="title_notifications">Bildirisler</string>
+    <string name="title_profile">Profil</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stories_image">stories image</string>
+</resources>
