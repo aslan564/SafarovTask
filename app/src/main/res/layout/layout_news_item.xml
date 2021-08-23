@@ -19,7 +19,7 @@
             android:id="@+id/image_container"
             android:layout_width="270dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_card"
+            android:background="@drawable/bg_card_outline"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

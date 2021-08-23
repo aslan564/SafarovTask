@@ -7,4 +7,5 @@
     <dimen name="stories_image_size">72dp</dimen>
     <dimen name="margin24">24dp</dimen>
     <dimen name="margin8">8dp</dimen>
+    <dimen name="margin32">32dp</dimen>
 </resources>

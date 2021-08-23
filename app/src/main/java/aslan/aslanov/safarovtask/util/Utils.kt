@@ -5,11 +5,14 @@ import android.os.Environment
 import android.util.Log
 import android.widget.ImageView
 import aslan.aslanov.safarovtask.R
+import aslan.aslanov.safarovtask.network.NetworkResult
 import com.bumptech.glide.Glide
 import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import okhttp3.ResponseBody
+import org.json.JSONObject
 import java.io.File
 import java.lang.Exception
 import java.util.*
@@ -44,6 +47,21 @@ fun getImageFile(context: Context, onComplete: (File) -> Unit) {
         onComplete(file.absoluteFile)
     } catch (e: Exception) {
         e.printStackTrace()
+    }
+}
+fun <T>catchServerError(error: ResponseBody?,onCatchError:(NetworkResult<T>)->Unit){
+    try {
+        val jOBJError=error?.let {
+            JSONObject(it.string())
+        }
+        jOBJError?.let {
+            val messageServer=jOBJError.getString("error")
+            val errorServer=jOBJError.getString("message")
+            onCatchError(NetworkResult.error(errorServer))
+        }
+
+    } catch (e: Exception) {
+        onCatchError(NetworkResult.error(e.message))
     }
 }
 

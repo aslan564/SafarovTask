@@ -32,4 +32,16 @@
     <string name="edit_text_email">aslanovaslan165@gmail.com</string>
     <string name="swiper_button">Swiper button</string>
     <string name="save">Yaddaşda  saxla</string>
+    <string name="contact">Əlaqə</string>
+    <string name="address">ÜNVAN</string>
+    <string name="address_val">AZ1000, Bakı, Ü. Hacıbəyli küç., 84</string>
+    <string name="email_address">MAIL ÜNVANI</string>
+    <string name="email_address_val">info@azpromo.az</string>
+    <string name="contact_number">ƏLAQƏ NÖMRƏSİ</string>
+    <string name="contact_number_val">+994 (55) 850 11 15\n+994 (55) 850 11 16</string>
+    <string name="notification">BİLDİRİŞLƏR</string>
+    <string name="notification_image">notification Image</string>
+    <string name="notification_text">"Biznes forumlar kateqoriyasında yeni İnkişaf\n Bankının (AİB) Azərbaycandakı Daimi\n Nümayəndəliyinin rəhbəri başlıqlı post "</string>
+    <string name="share_date_notification">12 dəqiqə əvvəl</string>
+    <string name="notification_text_tree">Siz uğurla İxracatçılar Klubuna Üzv seçildiniz</string>
 </resources>

@@ -7,4 +7,7 @@
     <string name="title_profile">Profil</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="stories_image">stories image</string>
+    <string name="notification_text">"Biznes forumlar kateqoriyasında yeni İnkişaf\n Bankının (AİB) Azərbaycandakı Daimi\n Nümayəndəliyinin rəhbəri başlıqlı post"</string>
+    <string name="share_date_notification">12 dəqiqə əvvəl</string>
+    <string name="notification_text_tree">Siz uğurla İxracatçılar Klubuna Üzv seçildiniz</string>
 </resources>

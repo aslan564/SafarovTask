@@ -18,6 +18,7 @@ import aslan.aslanov.safarovtask.ui.fragment.home.newsAdapter.NewsAdapter
 import aslan.aslanov.safarovtask.ui.fragment.home.storiesAdapter.StoriesAdapter
 import aslan.aslanov.safarovtask.ui.fragment.home.videoGallery.VideoGalleryAdapter
 import aslan.aslanov.safarovtask.util.logApp
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.launch
 import java.util.*
 
@@ -108,14 +109,20 @@ class HomeFragment : Fragment() {
                     adapterEntrepreneurs.submitList(it.data?.forEntrepreneurs?.list)
                     adapterVideos.submitList(it.data?.videos?.list)
                 }
-                progressBar.visibility=View.GONE
+                progressBar.visibility = View.GONE
+            }
+        })
+
+        homeViewModel.error.observe(viewLifecycleOwner, {
+            it?.let { message ->
+                Snackbar.make(requireView(), message, Snackbar.LENGTH_LONG).show()
             }
         })
     }
 
     private fun recyclerViewApplying(
         linearLayoutManager: LinearLayoutManager,
-    ):Unit= with(binding) {
+    ): Unit = with(binding) {
         recyclerViewStories.apply {
             adapter = adapterStories
         }

@@ -13,9 +13,9 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="aslan.aslanov.safarovtask.ui.fragment.dashboard.DashboardFragment"
+        android:name="aslan.aslanov.safarovtask.ui.fragment.contact.ContactFragment"
         android:label="@string/title_connection"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_contact" />
 
     <fragment
         android:id="@+id/navigation_notifications"
