@@ -27,7 +27,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SafarovTask">
+        android:theme="@style/Theme.SafarovTask"
+        tools:ignore="AllowBackup">
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -65,7 +66,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBdJqmZZwc90lIWmfa0jrpSeSmQ4mCdp-E" />
+            android:value="YOUR_KEY_HERE" />
 
 
     </application>
